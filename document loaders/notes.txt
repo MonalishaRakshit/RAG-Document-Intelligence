@@ -1,0 +1,91 @@
+Correlation vs Covariance — Easy Explanation
+1. Covariance
+
+Covariance tells us the direction in which two variables move.
+
+Suppose we have:
+
+Study hours
+Exam marks
+
+If study hours increase and marks also increase:
+
+Study Hours ↑
+       ↓
+Marks ↑
+
+They move in the same direction → Positive covariance.
+
+If study hours increase but marks decrease:
+
+Study Hours ↑
+       ↓
+Marks ↓
+
+They move in opposite directions → Negative covariance.
+
+So:
+
+Positive covariance → same direction
+Negative covariance → opposite direction
+Zero/near zero covariance → no clear linear movement
+2. Correlation
+
+Correlation tells us the direction AND how strong the relationship is.
+
+Its value is always:
+
+$$ -1 \leq r \leq 1 $$
+
+For example:
+
+r = +0.9 → strong positive relationship
+r = +0.2 → weak positive relationship
+r = -0.8 → strong negative relationship
+r = 0 → no linear relationship
+
+So correlation gives us more understandable information about the relationship.
+
+3. Main Difference
+
+Imagine two variables:
+
+X = Study Hours
+Y = Marks
+
+If students who study more generally get higher marks:
+
+Covariance:
+→ tells us positive direction.
+
+Correlation:
+→ tells us positive direction + strength.
+
+For example:
+
+Correlation = +0.95
+
+This means the relationship is strong and positive.
+
+4. Why correlation is easier to use?
+
+Covariance doesn't have a fixed range.
+
+It could be:
+
+10
+100
+5000
+-200
+
+So comparing covariance values can be difficult.
+
+Correlation is always between:
+
+-1 ←──── 0 ────→ +1
+
+Therefore, it's easier to understand and compare.
+
+🧠 One-line revision
+
+Covariance tells the direction of relationship, while correlation tells both the direction and strength of a linear relationship.
