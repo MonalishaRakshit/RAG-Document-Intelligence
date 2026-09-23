@@ -24,7 +24,7 @@ from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import CharacterTextSplitter
 
 splitter = CharacterTextSplitter(
-    separator= "",
+    separator= "", #separator is most important for character based splitting otherwise the default textsplitter works on '\n\n' by default not on character based , so to use character based splitting we must use separator 
     chunk_size = 10,
     chunk_overlap = 1
 )

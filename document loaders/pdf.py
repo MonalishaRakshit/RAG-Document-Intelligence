@@ -1,11 +1,11 @@
-from langchain_community.document_loaders import PyPDFLoader
+# from langchain_community.document_loaders import PyPDFLoader
 
-data = PyPDFLoader("document loaders/GRU.pdf",
-                  )
+# data = PyPDFLoader("document loaders/GRU.pdf",
+#                   )
 
-docs = data.load()
+# docs = data.load()
 
-print(docs[7])
+# print(docs[7])
 
 
 # docs (document) contains 2 things -> 
@@ -14,7 +14,22 @@ print(docs[7])
 # no. of pages in pdf == the no of document form
 
 
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import TokenTextSplitter
 
+data = PyPDFLoader("document loaders/GRU.pdf",
+                  )
+
+docs = data.load()
+
+splitter = TokenTextSplitter(
+    chunk_size = 700,
+    chunk_overlap = 5
+)
+
+chunks = splitter.split_documents(docs)
+
+print(chunks[0].page_content)
 
 
 
